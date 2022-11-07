@@ -1,0 +1,47 @@
+.container {
+  width: 90%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin-right: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 240px;
+  background-color: rgba(51, 54, 54, 0.552);
+  color: transparent;
+  cursor: pointer;
+  font-size: 60px;
+  font-weight: 500;
+  user-select: none;
+  transition: transform .5s, background-color .5s, color .5s;
+}
+
+.card.open {
+  background-color: rgb(55, 87, 87);
+  color: bisque;
+  cursor: auto;
+}
+
+.card.success {
+  background-color: rgb(80, 201, 24);
+  color: rgb(255, 255, 255);
+  transform: scale(.97);
+}
+
+
+.inputGame{
+  width: 50%;
+  max-height: 200px;
+  font-size: 12px;
+}
